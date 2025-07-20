@@ -2,6 +2,7 @@
   "compilerOptions": {
     // Tipos de JSX para usar. "react-jsx" é o padrão moderno para React 17+.
     "jsx": "react-jsx",
+    "allowJs": true,
 
     // Para qual versão do JavaScript o código será compilado. ES2020 é um bom padrão.
     "target": "ES2020",
