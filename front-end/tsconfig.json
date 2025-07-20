@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    // Tipos de JSX para usar. "react-jsx" é o padrão moderno para React 17+.
+    "jsx": "react-jsx",
+
+    // Para qual versão do JavaScript o código será compilado. ES2020 é um bom padrão.
+    "target": "ES2020",
+    "module": "ESNext",
+
+    // Permite que o TypeScript entenda importações de módulos CommonJS.
+    "moduleResolution": "bundler",
+    
+    // Habilita todas as checagens de tipo mais estritas. Altamente recomendado!
+    "strict": true,
+
+    // Onde procurar por arquivos.
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // Permite importações como: import Button from "@/components/ui/Button"
+    },
+    
+    // Regras adicionais de qualidade de código.
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Necessário para ferramentas como o Vite.
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+
+    // Não gera arquivos .js durante a compilação (o Vite/CRA cuida disso).
+    "noEmit": true,
+
+    // Bibliotecas que o TypeScript deve reconhecer. DOM é para o navegador.
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true
+  },
+  // Diz ao TypeScript para incluir todos os arquivos dentro da pasta 'src'.
+  "include": ["src"]
+}
